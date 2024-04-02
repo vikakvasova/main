@@ -1,0 +1,11 @@
+.slider{
+    
+}
+.slider-slide{
+    display: inline-block;
+    justify-content: space-between;
+
+}
+.slider-info{
+    background-color: #5C3249;
+}
