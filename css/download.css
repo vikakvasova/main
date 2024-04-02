@@ -27,7 +27,7 @@
 .page-download_btn_block{
     justify-content: center;
     display: flex;
-    -webkit-box-pack: center;
+    /* -webkit-box-pack: center; */
     margin-bottom: 50px;
    
 }

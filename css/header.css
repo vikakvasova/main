@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+   
     height: 100hw - 80px;
 }
 .header-wrap {
@@ -19,16 +19,25 @@
 .logo{
     z-index: 9999;
     margin-left: -20px;
+    justify-content: center;
+    width: 185px;
+    height: 25px;
+    
+    
+    display: flex;
+  
+    align-items: center;
 }
 .navigation-list {
     display: flex;
+    z-index: 3;
 }
 .navigation-list__item {
     margin-left: 30px;
 }
-.navigation-list__item:first-child{
+/* .navigation-list__item:first-child{
     margin-left: 0px;
-}
+} */
 .navigation-list__item a {
     font-weight: 700;
  font-size: 13px;
@@ -51,4 +60,8 @@
     border-bottom: 3px solid #E71414;
     color: #E71414;
     align-items: flex-end;
+}
+
+.burger-menu{
+    display: none;
 }

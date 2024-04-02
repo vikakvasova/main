@@ -21,8 +21,8 @@
 }
 .grid-card_img{
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 30px;
     
     display: flex;
