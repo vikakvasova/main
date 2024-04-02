@@ -1,0 +1,68 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./fonts.css);
+@import url(./cards.css);
+@import url(./gallery.css);
+@import url(./cdn.css);
+@import url(./people.css);
+@import url(./download.css);
+@import url(./social.css);
+@import url(./copyright.css);
+@import url(./slider.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.a{
+  text-decoration: none;
+}
+html {
+ font-family:  "RALEWAY", "CARDO", sans-serif;
+}
+  
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto; 
+  flex-wrap: wrap;
+}
+
+.link{
+  transition: 0.3s;
+}
+.input{
+  border: none;
+  outline: none;
+}
+@media all and (max-width: 1024px) {
+ 
+  
+  .container{
+      max-width: 1024px;
+  }
+  .grid-card{
+    width: 315px;
+  }
+  .gallery-item{
+    height: 230px;
+  }
+  .grid-people{
+    max-width: 220px;
+    margin: 20px;
+  }
+  .grid-peole_img{
+    height: 220px;
+    width: 220px;
+  }
+}
+@media (max-width: 992px) {
+  
+  .container{
+      max-width: 750px;
+  }
+}
+
+  
