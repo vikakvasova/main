@@ -29,8 +29,11 @@
 .main_btn_block{
     justify-content: center;
     display: flex;
-    -webkit-box-pack: center;
+    
     margin-bottom: 50px;
+
+
+    
 }
 
 .main_btn{
@@ -45,11 +48,56 @@
     padding: 20px 90px;
     text-decoration: none;
     transition: 0.3s;
+       
+
+
+    position: absolute;
 }
 .main_btn:hover{
     color: #fff;
     background-color: #E71414;
-   
+   transform: translateY(-3px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.main_btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn_puls::after {
+    background-color: #E71414;
+}
+
+.main_btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    
+    animation-duration: 2.0s;
+  animation-name: movebtn;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movebtn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .main_btn:active{
     color: #fff;
